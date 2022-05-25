@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,7 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText inputEmail, InputPassword;
     Button btnLogin;
+    TextView registerLink;
 
     FirebaseAuth mAuth;
 
@@ -27,8 +29,11 @@ public class LoginActivity extends AppCompatActivity {
         inputEmail = findViewById(R.id.inputEmail);
         InputPassword = findViewById(R.id.inputPassword);
         btnLogin = findViewById(R.id.btnLogin);
+        registerLink = findViewById(R.id.registerLink);
 
         btnLogin.setOnClickListener(v -> login());
+
+        registerLink.setOnClickListener(v -> startActivity(new Intent(LoginActivity.this, RegisterActivity.class)));
 
     }
 
