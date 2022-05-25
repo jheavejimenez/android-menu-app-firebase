@@ -1,5 +1,7 @@
 package com.example.menu_app_firebase;
 
-public class LoginActivity {
+import androidx.appcompat.app.AppCompatActivity;
+
+public class LoginActivity extends AppCompatActivity {
 
 }
