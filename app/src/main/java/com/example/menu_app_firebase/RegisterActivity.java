@@ -62,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
       }
 
       if (!isPasswordValid(password)) {
-         inputPasswordRegister.setError("Password is not valid");
+         inputPasswordRegister.setError("Minimum length of password should be 8");
          inputPasswordRegister.requestFocus();
          return;
       }
@@ -86,6 +86,6 @@ public class RegisterActivity extends AppCompatActivity {
    }
 
    private boolean isPasswordValid(String password) {
-      return password.length() > 8;
+      return password.length() > 7;
    }
 }
