@@ -3,12 +3,14 @@ package com.example.menu_app_firebase;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.example.menu_app_firebase.adapter.BurgerAdapter;
@@ -57,8 +59,8 @@ public class MainActivity extends AppCompatActivity implements IBurgerListener {
         ButterKnife.bind(this);
         BurgerLoadlistener = this;
 
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(this, 2);
-        burgerRecyclerView.setLayoutManager(gridLayoutManager);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        burgerRecyclerView.setLayoutManager(linearLayoutManager);
 
     }
 

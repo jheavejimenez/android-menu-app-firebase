@@ -7,34 +7,41 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="135dp"
+        android:layout_width="359dp"
+        android:layout_height="122dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
         android:background="@drawable/container_bg"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.878" />
 
     <ImageView
         android:id="@+id/burgerImage"
-        android:layout_width="100dp"
-        android:layout_height="130dp"
-        android:layout_marginStart="24dp"
+        android:layout_width="122dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676"
         app:srcCompat="@drawable/a" />
 
     <TextView
         android:id="@+id/burgerName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="Triple whooper Cheese Burger"
         android:textColor="#000000"
@@ -47,11 +54,12 @@
         android:id="@+id/amountOfCalories"
         android:layout_width="73dp"
         android:layout_height="24dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:text="1,234 Cal"
         android:textAlignment="textStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/burgerImage"
         app:layout_constraintTop_toBottomOf="@+id/burgerName" />
 
@@ -59,11 +67,11 @@
         android:id="@+id/burgerPrice"
         android:layout_width="43dp"
         android:layout_height="15dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="$100"
-        android:textSize="12sp"
         android:textAlignment="textStart"
+        android:textSize="14sp"
         app:layout_constraintStart_toEndOf="@+id/burgerImage"
         app:layout_constraintTop_toBottomOf="@+id/amountOfCalories" />
 </androidx.constraintlayout.widget.ConstraintLayout>
