@@ -1,0 +1,81 @@
+{
+  "Burger": {
+    "01": {
+      "name": "Bacon Cheeseburger",
+      "calories": "343 Cal",
+      "description": "You can’t go wrong with our Bacon Cheeseburger, a signature flame-grilled beef patty topped with smoked bacon and a layer of melted American cheese, crinkle cut pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+      "price": "399",
+      "image": "https://i.ibb.co/QY9rBzR/2ab802b49c46f0512bf084bf53579d8bafe31e95-1333x1333.png"
+    },
+    "02": {
+      "name": "Impossible™ Whopper",
+      "calories": "626 Cal",
+      "description": "Features a flame-grilled patty made from plants topped with tomatoes, lettuce, mayo, ketchup, pickles, and onions. *Patty cooked on the same broiler as beef patties.",
+      "price": "499",
+      "image": "https://i.ibb.co/wK8Hc6W/238e287aa4d92d6e0cc4783e397b6e7386cd2e47-1333x1333.png"
+    },
+    "03": {
+      "name": "Hamburger",
+      "calories": "259 Cal",
+      "description": "Our Hamburger is a signature flame-grilled beef patty topped with a simple layer of crinkle cut pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+      "price": "360",
+      "image": "https://i.ibb.co/j8tSsCB/28f37c5a4018fc3c167a119948c36e21d08d6a31-1333x1333.png"
+    },
+    "04": {
+      "name": "Double Whopper",
+      "calories": "919 Cal",
+      "description": "Our Double Whopper Sandwich is a pairing of two ¼ lb* savory flame-grilled beef patties topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun. Weight based on pre-cooked patty",
+      "price": "560",
+      "image": "https://i.ibb.co/pbtfD7r/741f937b50b66ff1f6314046458cf3a4ffe30d8d-1333x1333.png"
+    },
+    "05": {
+      "name": "Cheese Burger",
+      "calories": "301 Cal",
+      "description": "Our Cheeseburger is a signature flame-grilled beef patty topped with a simple layer of melted American cheese, crinkle cut pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+      "price": "150",
+      "image": "https://i.ibb.co/vZSNSRT/55361a27d204b821ff404ed6a70d654c1224ecb0-1333x1333.png"
+    },
+    "06": {
+      "name": "Bacon Double Cheeseburger",
+      "calories": "532 Cal",
+      "description": "Make room for our Bacon Double Cheeseburger, two signature flame-grilled beef patties topped with smoked bacon and a simple layer of melted American cheese, crinkle cut pickles, yellow mustard, and ketchup on a toasted sesame seed bun.",
+      "price": "780",
+      "image": "https://i.ibb.co/Xxbv5Z6/d3c42cf9d0e199c75db3cb703b9695878b2e87dd-1333x1333.png"
+    },
+    "07": {
+      "name": "Whopper",
+      "calories": "666 Cal",
+      "description": "Our Whopper Sandwich is a ¼ lb* of savory flame-grilled beef topped with juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun. Weight based on pre-cooked patty",
+      "price": "499",
+      "image": "https://i.ibb.co/ZVGY9d9/84743a96a55cb36ef603c512d5b97c9141c40a33-1333x1333.png"
+    },
+    "08": {
+      "name": "Rodeo Burger",
+      "calories": "336 Cal",
+      "description": "Our new Rodeo Burger features a savory flame-grilled beef patty topped with sweet and smoky BBQ sauce and crispy, golden onion rings served on a toasted, sesame seed bun.",
+      "price": "289",
+      "image": "https://i.ibb.co/jTPhTvk/89605b9eb093decb45f2ad2b53d410d722250982-1333x1333.png"
+    },
+    "09": {
+      "name": "Bacon King",
+      "calories": "1,993 Cal",
+      "description": "Our Bacon King Sandwich features two ¼ lb* savory flame-grilled beef patties, topped a with hearty portion of thick-cut smoked bacon, melted American cheese and topped with ketchup and creamy mayonnaise all on a soft sesame seed bun. Weight based on pre-cooked patty",
+      "price": "798",
+      "image": "https://i.ibb.co/q13BF2b/60712f81a07316d3300b65823ab68b59def70c8e-1333x1333.png"
+    },
+    "10": {
+      "name": "Big King",
+      "calories": "498 Cal",
+      "description": "The Big King features two flame-grilled beef patties topped with fresh lettuce, sliced white onion, crunchy pickles, American cheese and our special stacker sauce on a toasted sesame seed bun",
+      "price": "890",
+      "image": "https://i.ibb.co/NWsCYqy/d06846598b47ff0ae865299a30b2826993567e9c-1333x1333.png"
+    },
+    "11": {
+      "name": "Triple Whopper Cheese",
+      "calories": "1,216 Cal",
+      "description": "Our Triple Whopper Sandwich features three ¼ lb* savory flame-grilled beef patties topped with melted American cheese, juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun. Weight based on pre-cooked patties",
+      "price": "999",
+      "image": "https://i.ibb.co/XLQ6ndp/f3d7588c1f46ad6a1afaa3404cec65ed6053879f-1333x1333.png"
+    }
+  }
+}
