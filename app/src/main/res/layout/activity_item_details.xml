@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/itemBg"
+        android:layout_width="367dp"
+        android:layout_height="307dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/container_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <ImageView
+        android:id="@+id/ItemImage"
+        android:layout_width="313dp"
+        android:layout_height="247dp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemBg"
+        app:layout_constraintEnd_toEndOf="@+id/itemBg"
+        app:layout_constraintStart_toStartOf="@+id/itemBg"
+        app:layout_constraintTop_toTopOf="@+id/itemBg"
+        app:layout_constraintVertical_bias="0.533"
+        app:srcCompat="@drawable/a" />
+
+    <TextView
+        android:id="@+id/itemHeadline"
+        android:layout_width="324dp"
+        android:layout_height="97dp"
+        android:layout_marginTop="20dp"
+        android:text="Triple whooper Cheese Burger"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemBg" />
+
+    <TextView
+        android:id="@+id/itemDescription"
+        android:layout_width="383dp"
+        android:layout_height="217dp"
+        android:layout_marginTop="20dp"
+        android:text="Our Triple Whopper Sandwich features three ¼ lb* savory flame-grilled beef patties topped with melted American cheese, juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun. Weight based on pre-cooked patties"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemHeadline" />
+
+    <TextView
+        android:id="@+id/itemCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="1,234 Cal"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.662"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription"
+        app:layout_constraintVertical_bias="0.176"
+        tools:textSize="16sp"
+        tools:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/itemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="P999"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.321"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription"
+        app:layout_constraintVertical_bias="0.176"
+        tools:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ItemAddToCart"
+        android:layout_width="358dp"
+        android:layout_height="68dp"
+        android:text="Add to cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemDescription"
+        app:layout_constraintVertical_bias="0.567"
+        tools:textSize="16sp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
