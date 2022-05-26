@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "313694079812",
+    "firebase_url": "https://menu-app-firebase-default-rtdb.asia-southeast1.firebasedatabase.app",
     "project_id": "menu-app-firebase",
     "storage_bucket": "menu-app-firebase.appspot.com"
   },
