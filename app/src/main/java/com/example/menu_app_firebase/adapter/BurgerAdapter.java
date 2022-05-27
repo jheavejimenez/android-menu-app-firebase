@@ -17,6 +17,7 @@ import com.example.menu_app_firebase.BurgerDetailsActivity;
 import com.example.menu_app_firebase.R;
 import com.example.menu_app_firebase.model.BurgerModel;
 
+import java.io.Serializable;
 import java.util.List;
 
 import butterknife.BindView;
@@ -44,7 +45,7 @@ public class BurgerAdapter extends RecyclerView.Adapter<BurgerAdapter.BurgerView
         Glide.with(context).load(burgerModelList.get(position).getImage()).into(holder.burgerImage);
         holder.burgerName.setText(burgerModelList.get(position).getName());
         holder.amountOfCalories.setText(burgerModelList.get(position).getCalories());
-        holder.burgerPrice.setText(burgerModelList.get(position).getPrice());
+        holder.burgerPrice.setText(new StringBuilder("₱").append(burgerModelList.get(position).getPrice()));
         holder.mainLayout.setOnClickListener(v -> {
            holder.burgerImage.setTag(burgerModelList.get(position).getImage());
            Intent intent = new Intent(context, BurgerDetailsActivity.class);
@@ -52,8 +53,7 @@ public class BurgerAdapter extends RecyclerView.Adapter<BurgerAdapter.BurgerView
            intent.putExtra("burger_name", burgerModelList.get(position).getName());
            intent.putExtra("description", burgerModelList.get(position).getDescription());
            intent.putExtra("burger_calories", burgerModelList.get(position).getCalories());
-           intent.putExtra("burger_price", burgerModelList.get(position).getPrice());
-
+           intent.putExtra("burger_price", (Serializable) new StringBuilder("₱").append(burgerModelList.get(position).getPrice()));
            context.startActivity(intent);
 
         });

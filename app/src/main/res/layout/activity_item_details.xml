@@ -33,8 +33,8 @@
 
     <TextView
         android:id="@+id/itemHeadline"
-        android:layout_width="324dp"
-        android:layout_height="97dp"
+        android:layout_width="323dp"
+        android:layout_height="87dp"
         android:layout_marginTop="16dp"
         android:text="Triple whooper Cheese Burger"
         android:textAlignment="center"
@@ -47,46 +47,48 @@
 
     <TextView
         android:id="@+id/itemDescription"
-        android:layout_width="383dp"
-        android:layout_height="217dp"
+        android:layout_width="356dp"
+        android:layout_height="211dp"
         android:layout_marginTop="16dp"
         android:text="Our Triple Whopper Sandwich features three ¼ lb* savory flame-grilled beef patties topped with melted American cheese, juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun. Weight based on pre-cooked patties"
         android:textAlignment="center"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/itemHeadline" />
+        app:layout_constraintTop_toBottomOf="@+id/itemHeadline"
+        app:layout_constraintVertical_bias="0.026" />
 
     <TextView
         android:id="@+id/itemCalories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="112dp"
         android:layout_marginBottom="8dp"
         android:text="1,234 Cal"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-        tools:textSize="16sp"
-        tools:textStyle="bold" />
+        app:layout_constraintVertical_bias="0.247"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/itemPrice"
         android:layout_width="67dp"
         android:layout_height="24dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="112dp"
         android:layout_marginBottom="8dp"
         android:text="P 999"
         android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-        tools:textStyle="bold" />
+        app:layout_constraintVertical_bias="0.252"
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/ItemAddToCart"
@@ -98,7 +100,7 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-        app:layout_constraintVertical_bias="0.485"
+        app:layout_constraintVertical_bias="0.671"
         tools:textSize="16sp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
