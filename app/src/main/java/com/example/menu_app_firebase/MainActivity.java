@@ -100,6 +100,9 @@ public class MainActivity extends AppCompatActivity implements IBurgerListener {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 
+
+
+
     @Override
     public void onStart() {
         super.onStart();

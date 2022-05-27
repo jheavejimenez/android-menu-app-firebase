@@ -68,7 +68,7 @@
         android:layout_marginBottom="8dp"
         android:text="1,234 Cal"
         android:textColor="@color/black"
-        app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
+        app:layout_constraintBottom_toTopOf="@+id/itemAddToCart"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
         app:layout_constraintVertical_bias="0.247"
@@ -84,14 +84,14 @@
         android:text="P 999"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
+        app:layout_constraintBottom_toTopOf="@+id/itemAddToCart"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
         app:layout_constraintVertical_bias="0.252"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/ItemAddToCart"
+        android:id="@+id/itemAddToCart"
         android:layout_width="358dp"
         android:layout_height="68dp"
         android:text="Add to cart"

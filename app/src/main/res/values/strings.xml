@@ -8,4 +8,12 @@
     <string name="confirm_password">Confirm Password</string>
     <string name="register_link">Register</string>
     <string name="logout">Logout</string>
+    <string name="order_info">Order Info</string>
+    <string name="order_number">Order Number</string>
+    <string name="number">435</string>
+    <string name="message">Will be ready in 5 minutes</string>
+    <string name="oder_list">Order List</string>
+    <string name="total" />
+    <string name="total2">"Total: "</string>
+    <string name="pricee">898</string>
 </resources>
