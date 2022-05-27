@@ -46,8 +46,9 @@ public class BurgerAdapter extends RecyclerView.Adapter<BurgerAdapter.BurgerView
         holder.amountOfCalories.setText(burgerModelList.get(position).getCalories());
         holder.burgerPrice.setText(burgerModelList.get(position).getPrice());
         holder.mainLayout.setOnClickListener(v -> {
+           holder.burgerImage.setTag(burgerModelList.get(position).getImage());
            Intent intent = new Intent(context, BurgerDetailsActivity.class);
-           intent.putExtra("burgerModel", burgerModelList.get(position).getImage());
+           intent.putExtra("image", burgerModelList.get(position).getImage());
            intent.putExtra("burger_name", burgerModelList.get(position).getName());
            intent.putExtra("description", burgerModelList.get(position).getDescription());
            intent.putExtra("burger_calories", burgerModelList.get(position).getCalories());
