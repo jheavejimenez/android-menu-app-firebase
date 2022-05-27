@@ -1,17 +1,15 @@
 package com.example.menu_app_firebase;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.LinearLayout;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.menu_app_firebase.adapter.BurgerAdapter;
 import com.example.menu_app_firebase.listener.IBurgerListener;
@@ -46,14 +44,7 @@ public class MainActivity extends AppCompatActivity implements IBurgerListener {
 
         inititalize();
         loadBurgerList();
-        // for logout
-//        btnLogout = findViewById(R.id.btnLogout);
-//        btnLogout.setOnClickListener(v -> {
-//            mAuth.signOut();
-//            startActivity(new Intent(MainActivity.this, LoginActivity.class));
-//        });
     }
-
 
     private void inititalize() {
         ButterKnife.bind(this);
@@ -108,6 +99,9 @@ public class MainActivity extends AppCompatActivity implements IBurgerListener {
         // show error message in toast
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
+
+
+
 
     @Override
     public void onStart() {

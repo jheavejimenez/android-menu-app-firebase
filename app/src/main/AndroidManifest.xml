@@ -18,6 +18,11 @@
         <activity android:name=".RegisterActivity"/>
         <activity android:name=".LoginActivity"/>
         <activity
+            android:name=".BurgerDetailsActivity"
+            android:parentActivityName=".MainActivity"
+        />
+        <activity android:name=".BurgerCartActivity"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
