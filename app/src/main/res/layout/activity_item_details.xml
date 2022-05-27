@@ -7,8 +7,8 @@
 
     <ImageView
         android:id="@+id/itemBg"
-        android:layout_width="367dp"
-        android:layout_height="307dp"
+        android:layout_width="340dp"
+        android:layout_height="244dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
@@ -18,12 +18,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.063" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
-        android:id="@+id/ItemImage"
-        android:layout_width="313dp"
-        android:layout_height="247dp"
+        android:id="@+id/itemImage"
+        android:layout_width="292dp"
+        android:layout_height="197dp"
         app:layout_constraintBottom_toBottomOf="@+id/itemBg"
         app:layout_constraintEnd_toEndOf="@+id/itemBg"
         app:layout_constraintStart_toStartOf="@+id/itemBg"
@@ -35,7 +35,7 @@
         android:id="@+id/itemHeadline"
         android:layout_width="324dp"
         android:layout_height="97dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Triple whooper Cheese Burger"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -49,7 +49,7 @@
         android:id="@+id/itemDescription"
         android:layout_width="383dp"
         android:layout_height="217dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="16dp"
         android:text="Our Triple Whopper Sandwich features three ¼ lb* savory flame-grilled beef patties topped with melted American cheese, juicy tomatoes, fresh lettuce, creamy mayonnaise, ketchup, crunchy pickles, and sliced white onions on a soft sesame seed bun. Weight based on pre-cooked patties"
         android:textAlignment="center"
         android:textSize="20sp"
@@ -62,32 +62,30 @@
         android:id="@+id/itemCalories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="8dp"
         android:text="1,234 Cal"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.662"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-        app:layout_constraintVertical_bias="0.176"
         tools:textSize="16sp"
         tools:textStyle="bold" />
 
     <TextView
         android:id="@+id/itemPrice"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="P999"
+        android:layout_width="67dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="P 999"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/ItemAddToCart"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.321"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-        app:layout_constraintVertical_bias="0.176"
         tools:textStyle="bold" />
 
     <Button
@@ -100,6 +98,7 @@
         app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/itemDescription"
-        app:layout_constraintVertical_bias="0.567"
+        app:layout_constraintVertical_bias="0.485"
         tools:textSize="16sp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

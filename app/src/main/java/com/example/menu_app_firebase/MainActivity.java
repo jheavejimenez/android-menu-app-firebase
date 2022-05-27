@@ -46,14 +46,7 @@ public class MainActivity extends AppCompatActivity implements IBurgerListener {
 
         inititalize();
         loadBurgerList();
-        // for logout
-//        btnLogout = findViewById(R.id.btnLogout);
-//        btnLogout.setOnClickListener(v -> {
-//            mAuth.signOut();
-//            startActivity(new Intent(MainActivity.this, LoginActivity.class));
-//        });
     }
-
 
     private void inititalize() {
         ButterKnife.bind(this);

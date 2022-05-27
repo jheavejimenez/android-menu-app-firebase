@@ -1,6 +1,7 @@
 package com.example.menu_app_firebase.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,9 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.menu_app_firebase.BurgerDetailsActivity;
 import com.example.menu_app_firebase.R;
 import com.example.menu_app_firebase.model.BurgerModel;
 
@@ -42,6 +45,17 @@ public class BurgerAdapter extends RecyclerView.Adapter<BurgerAdapter.BurgerView
         holder.burgerName.setText(burgerModelList.get(position).getName());
         holder.amountOfCalories.setText(burgerModelList.get(position).getCalories());
         holder.burgerPrice.setText(burgerModelList.get(position).getPrice());
+        holder.mainLayout.setOnClickListener(v -> {
+           Intent intent = new Intent(context, BurgerDetailsActivity.class);
+           intent.putExtra("burgerModel", burgerModelList.get(position).getImage());
+           intent.putExtra("burger_name", burgerModelList.get(position).getName());
+           intent.putExtra("description", burgerModelList.get(position).getDescription());
+           intent.putExtra("burger_calories", burgerModelList.get(position).getCalories());
+           intent.putExtra("burger_price", burgerModelList.get(position).getPrice());
+
+           context.startActivity(intent);
+
+        });
 
 
     }
@@ -61,10 +75,15 @@ public class BurgerAdapter extends RecyclerView.Adapter<BurgerAdapter.BurgerView
         @BindView(R.id.burgerPrice)
         TextView burgerPrice;
 
-        private Unbinder unbinder;
+        @BindView(R.id.activity_main)
+        ConstraintLayout mainLayout;
+
+        Unbinder unbinder;
+
         public BurgerViewHolder(@NonNull View itemView) {
             super(itemView);
             unbinder = ButterKnife.bind(this, itemView);
         }
     }
+
 }
